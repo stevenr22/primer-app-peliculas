@@ -7,7 +7,7 @@ export function MovieDetails() {
   //SE USA USE PARAMS PARA CAPTURAR O RESCATAS
   //DE LO QUE SE ENVIA EN LA RUTA EN ESTE CASO
   //SE ENVIA movieId
-  const { movieId } = useParams;
+  const { movieId } = useParams();
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ export function MovieDetails() {
 
   return (
     <div className="container">
-      <h1>DETALLE PELICULA SELECCIONADA</h1>
+      <h1>DETALLE PELICULA SELECCIONADA</h1><br />
       <img src={imageUrl} alt={movie.title} />
       <div>
         <p>

@@ -9,6 +9,7 @@ export function MyRoutes() {
         {/*PAGINA PRINCIPAL: LANDING PAGE*/}
         <Route exact path="/" element={<LandingPage />}></Route>
 
+
         {/*PAGINA DETALLE PELICULA : MOVIE DETAILS*/}
         <Route
           exact
