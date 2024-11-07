@@ -21,11 +21,19 @@ export function MovieDetails() {
     <div className="container">
       <h1>DETALLE PELICULA SELECCIONADA</h1><br />
       <img src={imageUrl} alt={movie.title} />
+      <br />
       <div>
         <p>
             <strong>Title:</strong>
             {movie.title}
         </p>
+        <br />
+        <p>
+          <strong>Description:</strong>
+          {movie.overview}
+        </p>
+        
+      
       </div>
     </div>
   );
